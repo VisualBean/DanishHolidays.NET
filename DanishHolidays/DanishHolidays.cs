@@ -41,6 +41,19 @@ namespace DanishHolidays
            return false;
         }
 
+        public static bool IsHoliday(this DateTime date, out HolidayModel holiday)
+        {
+            var _holiday = GetHolidays(date.Year).First(h => h.Date.ToShortDateString() == date.ToShortDateString());
+            if (_holiday != null)
+            {
+                holiday = _holiday;
+                return true;
+            }
+      
+            holiday = null;
+            return false;
+        }
+
         public static List<HolidayModel> GetHolidays()
         {
            return GetHolidays((DateTime.Now.Year));
