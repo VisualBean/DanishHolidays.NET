@@ -35,7 +35,7 @@ Check if date is a holiday & Get holiday out
 ```c#
 var date = new DateTime(1997,12,24);
 var holiday = new HolidayModel();
-if(date.Isholiday(out holiday)) //Returns True
+if(date.Isholiday(out holiday))
 {
  Console.WriteLine(holiday.Name); //Returns "Juleaften"
 }
