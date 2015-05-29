@@ -6,6 +6,12 @@ namespace DanishHolidays
 {
     public static class DanishHoliday
     {
+        /// <summary>
+        /// Returns Easter Sunday based on year, month and day
+        /// </summary>
+        /// <param name="year"></param>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
         private static void EasterSunday(int year, ref int month, ref int day)
         {
             int g = year % 19;
@@ -25,6 +31,11 @@ namespace DanishHolidays
                 day -= 31;
             }
         }
+        /// <summary>
+        /// Get easter sunday based on input year
+        /// </summary>
+        /// <param name="year"></param>
+        /// <returns></returns>
         private static DateTime EasterSunday(int year)
         {
             int month = 0;
@@ -33,14 +44,24 @@ namespace DanishHolidays
 
             return new DateTime(year, month, day);
         }
-
+        /// <summary>
+        /// Returns a boolean based on if the date matches a holiday.
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
         public static bool IsHoliday(this DateTime date)
         {
            var holiday = GetHolidays(date.Year).First(h => h.Date.ToShortDateString() == date.ToShortDateString());
            if (holiday != null) return true;
            return false;
         }
-
+        /// <summary>
+        /// Overload of IsHoliday() 
+        /// Returns a boolean and an out Holiday type if the date matches a holiday
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="holiday"></param>
+        /// <returns></returns>
         public static bool IsHoliday(this DateTime date, out HolidayModel holiday)
         {
             var _holiday = GetHolidays(date.Year).First(h => h.Date.ToShortDateString() == date.ToShortDateString());
@@ -53,11 +74,20 @@ namespace DanishHolidays
             holiday = null;
             return false;
         }
-
+        /// <summary>
+        /// Returns a list of holidays for the current year
+        /// </summary>
+        /// <returns></returns>
         public static List<HolidayModel> GetHolidays()
         {
            return GetHolidays((DateTime.Now.Year));
         }
+        /// <summary>
+        /// Overload for GetHolidays()
+        /// Returns a list of holidays for the inputtet year
+        /// </summary>
+        /// <param name="year"></param>
+        /// <returns></returns>
         public static List<HolidayModel> GetHolidays(int year)
         {
             var A_DAY = 86400;
@@ -169,6 +199,12 @@ namespace DanishHolidays
 
     internal static class extensions
     {
+        /// <summary>
+        /// Extension for substracting seconds, instead of using (date.AddSeconds(-{number})
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="seconds"></param>
+        /// <returns></returns>
         internal static DateTime SubstractSeconds(this DateTime date, int seconds)
         {
             return date.AddSeconds(-seconds);

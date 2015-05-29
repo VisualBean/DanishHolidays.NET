@@ -17,7 +17,7 @@ Get list of holidays for current year
 var holidays = DanishHolidays.GetHolidays();
 ```
 
-Get list of holidays for year ```c# Int```
+Get list of holidays for year ```Int```
 ```c#
 var holidays = DanishHolidays.GetHolidays(1997);
 ```
