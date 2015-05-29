@@ -40,6 +40,11 @@ namespace DanishHolidays
            if (holiday != null) return true;
            return false;
         }
+
+        public static List<HolidayModel> GetHolidays()
+        {
+           return GetHolidays((DateTime.Now.Year));
+        }
         public static List<HolidayModel> GetHolidays(int year)
         {
             var A_DAY = 86400;
