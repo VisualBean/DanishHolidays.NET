@@ -25,7 +25,7 @@ var holidays = DanishHolidays.GetHolidays(1997);
 Check if date is a holiday
 ```c#
 var date = new DateTime(1997,12,24);
-if(date.Isholiday()) //Returns True
+if(date.Isholiday())
 {
  //Its a holiday
 }
