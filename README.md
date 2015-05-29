@@ -5,7 +5,7 @@ Calculations are based an algorithm created by Nasa to calculate Easter Sunday.
 ##Getting Started
 DanishHolidays.NET is available on NuGet.
 ```
-Install-Package DanishHolidays-NET 
+Install-Package DanishHolidays.NET 
 ```
 
 Or 

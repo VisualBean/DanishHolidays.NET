@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanishHolidays", "DanishHolidays\DanishHolidays.csproj", "{DCAEAE65-290A-4B99-99A5-A94D78B1F235}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanishHolidaysNET45", "DanishHolidaysNET45\DanishHolidaysNET45.csproj", "{DCAEAE65-290A-4B99-99A5-A94D78B1F235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanishHolidaysNET40", "DanishHolidaysNET40\DanishHolidaysNET40.csproj", "{9524E79F-C5E0-449D-8945-CE46F39A5AF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanishHolidaysNET35", "DanishHolidaysNET35\DanishHolidaysNET35.csproj", "{9CE0C774-7137-4AD1-ABEB-7DF0232F5D4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanishHolidaysNET30", "DanishHolidaysNET30\DanishHolidaysNET30.csproj", "{0A144AB0-1AC6-496C-9F7E-E8EBA29201DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanishHolidaysNET20", "DanishHolidaysNET20\DanishHolidaysNET20.csproj", "{9B0D0F40-0AD2-4C32-9B7C-4C0125FA52D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{DCAEAE65-290A-4B99-99A5-A94D78B1F235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCAEAE65-290A-4B99-99A5-A94D78B1F235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCAEAE65-290A-4B99-99A5-A94D78B1F235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9524E79F-C5E0-449D-8945-CE46F39A5AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9524E79F-C5E0-449D-8945-CE46F39A5AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9524E79F-C5E0-449D-8945-CE46F39A5AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9524E79F-C5E0-449D-8945-CE46F39A5AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE0C774-7137-4AD1-ABEB-7DF0232F5D4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE0C774-7137-4AD1-ABEB-7DF0232F5D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE0C774-7137-4AD1-ABEB-7DF0232F5D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE0C774-7137-4AD1-ABEB-7DF0232F5D4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A144AB0-1AC6-496C-9F7E-E8EBA29201DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A144AB0-1AC6-496C-9F7E-E8EBA29201DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A144AB0-1AC6-496C-9F7E-E8EBA29201DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A144AB0-1AC6-496C-9F7E-E8EBA29201DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0D0F40-0AD2-4C32-9B7C-4C0125FA52D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0D0F40-0AD2-4C32-9B7C-4C0125FA52D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0D0F40-0AD2-4C32-9B7C-4C0125FA52D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0D0F40-0AD2-4C32-9B7C-4C0125FA52D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
