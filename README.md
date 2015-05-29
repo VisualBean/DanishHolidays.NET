@@ -1,5 +1,6 @@
 # DanishHolidays.NET
-A small library that calculates the danish holidays based on a given year.
+A small library that provides a few helpful methods including a list of danish holidays based on a given year.
+Calculations are based an algorithm created by Nasa to calculate Easter Sunday.
 
 ##Getting Started
 DanishHolidays.NET is available on NuGet.
