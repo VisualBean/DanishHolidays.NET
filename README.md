@@ -9,6 +9,7 @@ Calculations are based an algorithm created by Nasa to calculate Easter Sunday.
 * .NET3.0 (Desktop/Server)
 * .NET2.0 (Desktop/Server)
 * Windows 8 / 8.1 Store Apps
+
 ##Getting Started
 DanishHolidays.NET is available on NuGet.
 ```
