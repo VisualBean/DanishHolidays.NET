@@ -1,15 +1,15 @@
 # DanishHolidays.NET
 A small library that calculates the danish holidays based on a given year.
 
-
-##Installation
-
 ##Getting Started
 DanishHolidays.NET is available on NuGet.
 ```
 Install-Package DanishHolidays-NET 
 ```
 
+Or 
+
+you can [download](https://github.com/VisualBean/DanishHolidays.NET/archive/master.zip "download") this project as a zip and add src/DanishHolidays.Net.dll as a reference to your project
 ##Usage
 
 Get list of holidays for current year
