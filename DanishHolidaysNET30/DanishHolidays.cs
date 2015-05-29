@@ -74,7 +74,7 @@ namespace DanishHolidays
         /// <param name="date"></param>
         /// <param name="holiday"></param>
         /// <returns></returns>
-        public static bool IsHoliday(this DateTime date, out HolidayModel holiday)
+        public static bool IsHoliday(this DateTime date, out Holiday holiday)
         {
             foreach (var _holiday in GetHolidays(date.Year))
             {
@@ -92,7 +92,7 @@ namespace DanishHolidays
         /// Returns a list of holidays for the current year
         /// </summary>
         /// <returns></returns>
-        public static List<HolidayModel> GetHolidays()
+        public static List<Holiday> GetHolidays()
         {
            return GetHolidays((DateTime.Now.Year));
         }
@@ -102,105 +102,105 @@ namespace DanishHolidays
         /// </summary>
         /// <param name="year"></param>
         /// <returns></returns>
-        public static List<HolidayModel> GetHolidays(int year)
+        public static List<Holiday> GetHolidays(int year)
         {
             var A_DAY = 86400;
             var leapYear = DateTime.IsLeapYear(year);
             var fastelavn = leapYear ? 49 : 48;
             var easterSunday = EasterSunday(year);
 
-            var holidays = new List<HolidayModel>();
-            holidays.Add(new HolidayModel
+            var holidays = new List<Holiday>();
+            holidays.Add(new Holiday
             {
                 Date = new DateTime(year,1,1),
                 Name = "Nytårsdag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday.SubstractSeconds(3*A_DAY),
                 Name = "Skærtorsdag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday.SubstractSeconds(2 * A_DAY),
                 Name = "Langfredag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday,
                 Name = "Påskedag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday.AddSeconds(1 * A_DAY),
                 Name = "2. Påskedag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday.AddSeconds(26 * A_DAY),
                 Name = "Store bededag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday.AddSeconds(39 * A_DAY),
                 Name = "Kr. himmelfartsdag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday.AddSeconds(49 * A_DAY),
                 Name = "Pinsedag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday.AddSeconds(50 * A_DAY),
                 Name = "2. Pinsedag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = new DateTime(year, 6, 5),
                 Name = "Grundlovsdag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = new DateTime(year, 12, 24),
                 Name = "Juleaften",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = new DateTime(year, 12, 25),
                 Name = "1. Juledag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = new DateTime(year, 12, 26),
                 Name = "2. Juledag",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = new DateTime(year, 12, 31),
                 Name = "Nytårsaften",
                 IsDayOff = true
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = easterSunday.SubstractSeconds(fastelavn*A_DAY),
                 Name = "Fastelavn",
                 IsDayOff = false
             });
-            holidays.Add(new HolidayModel
+            holidays.Add(new Holiday
             {
                 Date = new DateTime(year,1,6),
                 Name = "Hellig 3 Konger",

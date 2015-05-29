@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DanishHolidays
 {
-    public class HolidayModel
+    public class Holiday
     {
         public DateTime Date { get; set; }
         public bool IsDayOff { get; set; }
