@@ -2,7 +2,7 @@
 A small library that provides a few helpful methods including a list of danish holidays based on a given year.
 Calculations are based an algorithm created by Nasa to calculate Easter Sunday.
 
-##Supported Platforms
+## Supported Platforms
 * .NET4.5 (Desktop/Server)
 * .NET4.0 (Desktop/Server)
 * .NET3.5 (Desktop/Server)
@@ -10,7 +10,7 @@ Calculations are based an algorithm created by Nasa to calculate Easter Sunday.
 * .NET2.0 (Desktop/Server)
 * Windows 8 / 8.1 Store Apps
 
-##Getting Started
+## Getting Started
 DanishHolidays.NET is available on NuGet.
 ```
 Install-Package DanishHolidays.NET 
@@ -19,7 +19,7 @@ Install-Package DanishHolidays.NET
 Or 
 
 you can [download](https://github.com/VisualBean/DanishHolidays.NET/archive/master.zip "download") this project as a zip and add src/NET{Version}/DanishHolidays.Net.dll as a reference to your project
-##Usage
+## Usage
 
 Get list of holidays for current year
 ```c#
